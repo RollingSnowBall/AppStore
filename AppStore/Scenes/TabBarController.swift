@@ -24,7 +24,7 @@ class TabBarController: UITabBarController {
     }()
     
     private lazy var appViewController: UIViewController = {
-        let appViewController = UIViewController()
+        let appViewController = UINavigationController(rootViewController: AppviewController())
         
         let tabBarItem = UITabBarItem(
             title: "앱",
